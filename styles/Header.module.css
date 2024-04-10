@@ -1,0 +1,21 @@
+/* styles/Header.module.css */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #0056b3; /* Cor de fundo */
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #003d82; /* Cor de fundo ao passar o mouse */
+}
