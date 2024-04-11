@@ -4,7 +4,7 @@ import styles from '../styles/Saude.module.css';
 const Saude = () => {
   return (
     <div className={styles.container}>
-      <h1>Saúde</h1>
+      <h1>Agendamentos</h1>
       <div className={styles.section}>
         <h2>Nutri</h2>
         <p>Explore suas necessidades nutricionais.</p>

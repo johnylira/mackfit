@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9; /* Fundo claro */
+    background-color: #fff7f7; /* Fundo claro */
 }
 
 .form {
@@ -34,19 +34,19 @@
 }
 
 .inputStyle:focus, .buttonStyle:focus {
-    border-color: #0056b3;
+    border-color: #d45133;
     outline: none;
 }
 
 .buttonStyle {
-    background-color: #0056b3; /* Cor principal */
+    background-color: #d45133; /* Cor principal */
     color: white;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
 
 .buttonStyle:hover {
-    background-color: #003d82; /* Cor mais escura ao passar o mouse */
+    background-color: #ba3f3f; /* Cor mais escura ao passar o mouse */
 }
 
 @media (max-width: 600px) {

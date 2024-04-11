@@ -1,21 +1,28 @@
 /* styles/Header.module.css */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centraliza os itens */
     padding: 1em;
-    background-color: #0056b3; /* Cor de fundo */
-    color: white;
+    background-color: #ffffff;
 }
 
 .navbar a {
-    color: white;
+    color: rgb(64, 6, 6);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em 1em;
+    margin-right: 10px; /* Adiciona margem à direita de cada link */
     border-radius: 4px;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar a:last-child {
+    margin-right: 0; /* Remove a margem do último item */
 }
 
 .navbar a:hover {
-    background-color: #003d82; /* Cor de fundo ao passar o mouse */
+    background-color: #800020;
+    color: black;
+    border-bottom: 2px solid currentColor;
 }

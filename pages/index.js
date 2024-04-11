@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   const router = useRouter();
@@ -14,34 +15,52 @@ const Home = () => {
   };
   return (
     <div className="homeContainer">
-      <h1>Bem-vindo ao MackFit!</h1>
-      <p>Explore seu potencial de fitness e bem-estar com os melhores recursos, dicas e comunidade de apoio.</p>
-      
+      {/* Seção 1 - MackFit */}
+      <div className={styles.sectionContainer}>
+      <div className={styles.backgroundImage}></div>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <h1 className={styles['center-text']}>MackFit</h1>
+        <p className={styles['center-text']}>Explore seu potencial de fitness e bem-estar com os melhores recursos, dicas e comunidade de apoio.</p>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      </div>
+
       <section className="introSection">
-        <h2>Transforme Seu Estilo de Vida</h2>
-        <p>Descubra rotinas de exercícios personalizadas, planos de alimentação saudável e acompanhamento de metas para impulsionar sua jornada de fitness.</p>
+      <div className={styles.transformeImage}></div>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <h2 className={styles['center-text']}>Transforme Seu Estilo de Vida</h2>
+        <p className={styles['center-text']}>Descubra rotinas de exercícios personalizadas, planos de alimentação saudável e acompanhamento de metas para impulsionar sua jornada de fitness.</p>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       </section>
 
       <section className="featuresSection">
-        <h2>Nossos Recursos</h2>
+        <div className={styles.recursosImage}></div>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <h2 className={styles['center-text']}>Nossos Recursos</h2>
         <div className="feature">
-          <h3>Treinos Personalizados</h3>
-          <p>Programas de treino feitos sob medida, adequados para todos os níveis de fitness.</p>
+          <h3 className={styles['center-text']}>Treinos Personalizados</h3>
+          <p className={styles['center-text']}>Programas de treino feitos sob medida, adequados para todos os níveis de fitness.</p>
         </div>
         <div className="feature">
-          <h3>Nutrição e Dietas</h3>
-          <p>Guias nutricionais e planos alimentares para acompanhar seus objetivos de fitness.</p>
+          <h3 className={styles['center-text']}>Nutrição e Dietas</h3>
+          <p className={styles['center-text']}>Guias nutricionais e planos alimentares para acompanhar seus objetivos de fitness.</p>
         </div>
         <div className="feature">
-          <h3>Comunidade e Suporte</h3>
-          <p>Conecte-se com outros entusiastas do fitness e obtenha o suporte que você precisa.</p>
+          <h3 className={styles['center-text']}>Comunidade e Suporte</h3>
+          <p className={styles['center-text']}>Conecte-se com outros entusiastas do fitness e obtenha o suporte que você precisa.</p>
         </div>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       </section>
 
       <section className="callToAction">
-        <h2>Pronto para Começar?</h2>
-        <p>Junte-se à nossa comunidade hoje e dê o primeiro passo na sua transformação!</p>
-        <button onClick={handleRedirect}>Inscreva-se Agora</button> {/* Adicione o manipulador de eventos onClick */}
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <h2 className={styles['center-text']}>Pronto para Começar?</h2>
+        <p className={styles['center-text']}>Junte-se à nossa comunidade hoje e dê o primeiro passo na sua transformação!</p>
+        
+        <div className={styles['btn-container']}>
+            <button onClick={handleRedirect} className={styles['btn-style']}>Inscreva-se Agora</button>
+        </div>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       </section>
     </div>
   );
